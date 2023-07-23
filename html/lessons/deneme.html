@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sütunlu Liste</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="liste-container">
+        <div class="liste-item">
+            <div class="sutun-1">İlk öğe</div>
+            <div class="sutun-2">Açıklama 1</div>
+        </div>
+        <div class="liste-item">
+            <div class="sutun-1">Bu öğe daha uzun bir sdfsdfsdfssdfsdsdsdfsdasdfasdfmetne sahip</div>
+            <div class="sutun-2">Açıklama 2</div>
+        </div>
+        <div class="liste-item">
+            <div class="sutun-1">Kısa</div>
+            <div class="sutun-2">Açıklama 3</div>
+        </div>
+    </div>
+</body>
+
+<style>.liste-container {
+    display: table;
+table-layout: fixed;
+width: 100%; /* Listenin genişliğini istediğiniz değere ayarlayabilirsiniz */
+}
+
+.liste-item {
+    display: table-row;
+}
+
+.sutun-1 {
+    display: table-cell;
+  padding: 5px; /* İstediğiniz padding değerini ayarlayabilirsiniz */
+  border: 1px solid #ccc; /* Görsel amaçlı çerçeve eklemek için sınır ekleyebilirsiniz */
+}
+
+.sutun-2 {
+    word-wrap: break-word; /* Metinlerin satır sonunda bölünmesini sağlar */
+}</style>
+</html>
